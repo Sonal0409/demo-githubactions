@@ -1,5 +1,5 @@
 name: my first workflows
-on: workflow_dispatch  # event when this workflow should be executed
+on: push  # event when this workflow should be executed
 jobs:
   job1:
     runs-on: ubuntu-latest
