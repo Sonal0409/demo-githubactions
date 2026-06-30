@@ -1,0 +1,15 @@
+name: my first workflows
+on: workflow_dispatch  # event when this workflow should be executed
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Execute a linux command 
+       run: echo "hello All"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Execute second command 
+       run: |
+        echo "Bye everyone!"
+        echo "Running on ubuntu VM"
